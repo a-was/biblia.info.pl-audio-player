@@ -110,3 +110,32 @@ function removeChapters(select) {
         select.remove(select.selectedIndex)
     }
 }
+
+function nextBook(booksSelectId) {
+    var booksSelect = document.getElementById(booksSelectId)
+    if (booksSelect.value != booksSelect.length) {
+        booksSelect.selectedIndex = booksSelect.selectedIndex + 1
+    }
+}
+
+function prevBook(booksSelectId) {
+    var booksSelect = document.getElementById(booksSelectId)
+    if (booksSelect.value != 1) {
+        booksSelect.selectedIndex = booksSelect.selectedIndex - 1
+    }
+}
+
+function nextChapter(chaptersSelectId) {
+    var chaptersSelect = document.getElementById(chaptersSelectId)
+    if (chaptersSelect.value != chaptersSelect.length) {
+        chaptersSelect.selectedIndex = chaptersSelect.selectedIndex + 1
+    }
+}
+
+
+function prevChapter(chaptersSelectId) {
+    var chaptersSelect = document.getElementById(chaptersSelectId)
+    if (chaptersSelect.value != 1) {
+        chaptersSelect.selectedIndex = chaptersSelect.selectedIndex - 1
+    }
+}

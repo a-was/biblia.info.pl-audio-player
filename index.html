@@ -8,45 +8,85 @@
 	<script src="https://cdn.plyr.io/3.5.10/plyr.js"></script>
 	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.10/plyr.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
 
 	<style>
 		body {
-			width: 90%;
+			width: 50%;
 			margin: 0 auto;
 		}
 
-		.select {
+		.button {
 			margin: 10px;
 		}
 
-		.player {
-			width: 50%;
+		.myselect {
+			margin-top: 10px;
+			/* margin: 20px; */
 		}
+
 	</style>
 
 </head>
 
 <body>
-	<div class="select">
-		<select name="books" id="books" onchange="insertChapters('chapters', 'books'); changeAudioSrcWhenReady('books', 'chapters')"></select>
-	</div>
-	<div class="select">
-		<select name="chapters" id="chapters" onchange="changeAudioSrcWhenReady('books', 'chapters')"></select>
-	</div>
+	<section class="section">
+		<div class="container">
+			<div class="myselect level">
+				<div class="level-left">
+					<button class="button is-rounded"
+						onclick="prevBook('books'); insertChapters('chapters', 'books'); changeAudioSrcWhenReady('books', 'chapters')">
+						<span class="icon is-small">
+							<i class="fas fa-angle-left"></i>
+						</span>
+					</button>
+					<div class="select">
+						<select name="books" id="books"
+							onchange="insertChapters('chapters', 'books'); changeAudioSrcWhenReady('books', 'chapters')"></select>
+					</div>
+					<button class="button is-rounded"
+						onclick="nextBook('books'); insertChapters('chapters', 'books'); changeAudioSrcWhenReady('books', 'chapters')">
+						<span class="icon is-small">
+							<i class="fas fa-angle-right"></i>
+						</span>
+					</button>
+				</div>
 
-	<br />
-	<br />
+				<div class="level-right">
+					<button class="button is-rounded"
+						onclick="prevChapter('chapters'); changeAudioSrcWhenReady('books', 'chapters')">
+						<span class="icon is-small">
+							<i class="fas fa-angle-left"></i>
+						</span>
+					</button>
+					<div class="select">
+						<select name="chapters" id="chapters"
+							onchange="changeAudioSrcWhenReady('books', 'chapters')"></select>
+					</div>
+					<button class="button is-rounded"
+						onclick="nextChapter('chapters'); changeAudioSrcWhenReady('books', 'chapters')">
+						<span class="icon is-small">
+							<i class="fas fa-angle-right"></i>
+						</span>
+					</button>
+				</div>
+			</div>
 
-	<div class="player">
-		<audio id="player" controls>
-			<source type="audio/mp3" />
-		</audio>
-	</div>
+			<br />
+			<br />
 
+			<div class="player">
+				<audio id="player" controls>
+					<source type="audio/mp3" />
+				</audio>
+			</div>
+		</div> <!-- container -->
+	</section>
 	<script>
 		const player = new Plyr('#player', {
-				"controls": ['play', 'progress', 'current-time', 'mute', 'volume']
-			})
+			"controls": ['play', 'progress', 'current-time', 'mute', 'volume']
+		})
 	</script>
 
 </body>
