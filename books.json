@@ -214,7 +214,7 @@
       "index": 31,
       "short": "ab",
       "name": "Księga Abdiasza",
-      "chapters": 0,
+      "chapters": 1,
       "part": "st"
     },
     {
@@ -396,7 +396,7 @@
       "index": 57,
       "short": "flm",
       "name": "List do Filemona",
-      "chapters": 0,
+      "chapters": 1,
       "part": "nt"
     },
     {
@@ -438,21 +438,21 @@
       "index": 63,
       "short": "2j",
       "name": "2 List Jana",
-      "chapters": 0,
+      "chapters": 1,
       "part": "nt"
     },
     {
       "index": 64,
       "short": "3j",
       "name": "3 List Jana",
-      "chapters": 0,
+      "chapters": 1,
       "part": "nt"
     },
     {
       "index": 65,
       "short": "jud",
       "name": "List Judy",
-      "chapters": 0,
+      "chapters": 1,
       "part": "nt"
     },
     {
