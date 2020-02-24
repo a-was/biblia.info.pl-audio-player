@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Audio Player</title>
+	<script src="./main.js"></script>
+	<script src="https://cdn.plyr.io/3.5.10/plyr.js"></script>
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.10/plyr.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+
+	<style>
+		body {
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		.select {
+			margin: 10px;
+		}
+
+		.player {
+			width: 50%;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="select">
+		<select name="books" id="books" onchange="insertChapters('chapters', 'books'); changeAudioSrcWhenReady('books', 'chapters')"></select>
+	</div>
+	<div class="select">
+		<select name="chapters" id="chapters" onchange="changeAudioSrcWhenReady('books', 'chapters')"></select>
+	</div>
+
+	<br />
+	<br />
+
+	<div class="player">
+		<audio id="player" controls>
+			<source type="audio/mp3" />
+		</audio>
+	</div>
+
+	<script>
+		const player = new Plyr('#player', {
+				"controls": ['play', 'progress', 'current-time', 'mute', 'volume']
+			})
+	</script>
+
+</body>
+
+</html>

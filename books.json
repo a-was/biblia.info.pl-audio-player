@@ -1,0 +1,466 @@
+{
+  "books": [
+    {
+      "index": 1,
+      "short": "rdz",
+      "name": "Księga Rodzaju",
+      "chapters": 50,
+      "part": "st"
+    },
+    {
+      "index": 2,
+      "short": "wj",
+      "name": "Księga Wyjścia",
+      "chapters": 40,
+      "part": "st"
+    },
+    {
+      "index": 3,
+      "short": "kpl",
+      "name": "Księga Kapłańska",
+      "chapters": 27,
+      "part": "st"
+    },
+    {
+      "index": 4,
+      "short": "lb",
+      "name": "Księga Liczb",
+      "chapters": 36,
+      "part": "st"
+    },
+    {
+      "index": 5,
+      "short": "pwt",
+      "name": "Księga Powtórzonego Prawa",
+      "chapters": 34,
+      "part": "st"
+    },
+    {
+      "index": 6,
+      "short": "joz",
+      "name": "Księga Jozuego",
+      "chapters": 24,
+      "part": "st"
+    },
+    {
+      "index": 7,
+      "short": "sdz",
+      "name": "Księga Sędziów",
+      "chapters": 21,
+      "part": "st"
+    },
+    {
+      "index": 8,
+      "short": "rt",
+      "name": "Księga Rut",
+      "chapters": 4,
+      "part": "st"
+    },
+    {
+      "index": 9,
+      "short": "1sm",
+      "name": "1 Księga Samuela",
+      "chapters": 31,
+      "part": "st"
+    },
+    {
+      "index": 10,
+      "short": "2sm",
+      "name": "2 Księga Samuela",
+      "chapters": 24,
+      "part": "st"
+    },
+    {
+      "index": 11,
+      "short": "1krl",
+      "name": "1 Księga Królewska",
+      "chapters": 22,
+      "part": "st"
+    },
+    {
+      "index": 12,
+      "short": "2krl",
+      "name": "2 Księga Królewska",
+      "chapters": 25,
+      "part": "st"
+    },
+    {
+      "index": 13,
+      "short": "1krn",
+      "name": "1 Księga Kronik",
+      "chapters": 29,
+      "part": "st"
+    },
+    {
+      "index": 14,
+      "short": "2krn",
+      "name": "2 Księga Kronik",
+      "chapters": 36,
+      "part": "st"
+    },
+    {
+      "index": 15,
+      "short": "ezd",
+      "name": "Księga Ezdrasza",
+      "chapters": 10,
+      "part": "st"
+    },
+    {
+      "index": 16,
+      "short": "ne",
+      "name": "Księga Nehemiasza",
+      "chapters": 13,
+      "part": "st"
+    },
+    {
+      "index": 17,
+      "short": "est",
+      "name": "Księga Estery",
+      "chapters": 10,
+      "part": "st"
+    },
+    {
+      "index": 18,
+      "short": "hi",
+      "name": "Księga Hioba",
+      "chapters": 42,
+      "part": "st"
+    },
+    {
+      "index": 19,
+      "short": "ps",
+      "name": "Księga Psalmów",
+      "chapters": 150,
+      "part": "st"
+    },
+    {
+      "index": 20,
+      "short": "prz",
+      "name": "Księga Przysłów",
+      "chapters": 31,
+      "part": "st"
+    },
+    {
+      "index": 21,
+      "short": "koh",
+      "name": "Księga Koheleta",
+      "chapters": 12,
+      "part": "st"
+    },
+    {
+      "index": 22,
+      "short": "pnp",
+      "name": "Pieśń nad pieśniami",
+      "chapters": 8,
+      "part": "st"
+    },
+    {
+      "index": 23,
+      "short": "iz",
+      "name": "Księga Izajasza",
+      "chapters": 66,
+      "part": "st"
+    },
+    {
+      "index": 24,
+      "short": "jr",
+      "name": "Księga Jeremiasza",
+      "chapters": 52,
+      "part": "st"
+    },
+    {
+      "index": 25,
+      "short": "lm",
+      "name": "Lamentacje Jeremiasza",
+      "chapters": 5,
+      "part": "st"
+    },
+    {
+      "index": 26,
+      "short": "ez",
+      "name": "Księga Ezechiela",
+      "chapters": 48,
+      "part": "st"
+    },
+    {
+      "index": 27,
+      "short": "dn",
+      "name": "Księga Daniela",
+      "chapters": 14,
+      "part": "st"
+    },
+    {
+      "index": 28,
+      "short": "oz",
+      "name": "Księga Ozeasza",
+      "chapters": 14,
+      "part": "st"
+    },
+    {
+      "index": 29,
+      "short": "jl",
+      "name": "Księga Joela",
+      "chapters": 4,
+      "part": "st"
+    },
+    {
+      "index": 30,
+      "short": "am",
+      "name": "Księga Amosa",
+      "chapters": 9,
+      "part": "st"
+    },
+    {
+      "index": 31,
+      "short": "ab",
+      "name": "Księga Abdiasza",
+      "chapters": 0,
+      "part": "st"
+    },
+    {
+      "index": 32,
+      "short": "jon",
+      "name": "Księga Jonasza",
+      "chapters": 4,
+      "part": "st"
+    },
+    {
+      "index": 33,
+      "short": "mi",
+      "name": "Księga Micheasza",
+      "chapters": 7,
+      "part": "st"
+    },
+    {
+      "index": 34,
+      "short": "na",
+      "name": "Księga Nahuma",
+      "chapters": 3,
+      "part": "st"
+    },
+    {
+      "index": 35,
+      "short": "ha",
+      "name": "Księga Habakuka",
+      "chapters": 3,
+      "part": "st"
+    },
+    {
+      "index": 36,
+      "short": "so",
+      "name": "Księga Sofoniasza",
+      "chapters": 3,
+      "part": "st"
+    },
+    {
+      "index": 37,
+      "short": "ag",
+      "name": "Księga Aggeusza",
+      "chapters": 2,
+      "part": "st"
+    },
+    {
+      "index": 38,
+      "short": "za",
+      "name": "Księga Zachariasza",
+      "chapters": 14,
+      "part": "st"
+    },
+    {
+      "index": 39,
+      "short": "ml",
+      "name": "Księga Malachiasza",
+      "chapters": 3,
+      "part": "st"
+    },
+    {
+      "index": 40,
+      "short": "mat",
+      "name": "Ewangelia Mateusza",
+      "chapters": 28,
+      "part": "nt"
+    },
+    {
+      "index": 41,
+      "short": "mar",
+      "name": "Ewangelia Marka",
+      "chapters": 16,
+      "part": "nt"
+    },
+    {
+      "index": 42,
+      "short": "luk",
+      "name": "Ewangelia Łukasza",
+      "chapters": 24,
+      "part": "nt"
+    },
+    {
+      "index": 43,
+      "short": "jan",
+      "name": "Ewangelia Jana",
+      "chapters": 21,
+      "part": "nt"
+    },
+    {
+      "index": 44,
+      "short": "dz",
+      "name": "Dzieje Apostolskie",
+      "chapters": 28,
+      "part": "nt"
+    },
+    {
+      "index": 45,
+      "short": "rz",
+      "name": "List do Rzymian",
+      "chapters": 16,
+      "part": "nt"
+    },
+    {
+      "index": 46,
+      "short": "1kor",
+      "name": "1 list do Koryntian",
+      "chapters": 16,
+      "part": "nt"
+    },
+    {
+      "index": 47,
+      "short": "2kor",
+      "name": "2 list do Koryntian",
+      "chapters": 13,
+      "part": "nt"
+    },
+    {
+      "index": 48,
+      "short": "gal",
+      "name": "List do Galatów",
+      "chapters": 6,
+      "part": "nt"
+    },
+    {
+      "index": 49,
+      "short": "ef",
+      "name": "List do Efezjan",
+      "chapters": 6,
+      "part": "nt"
+    },
+    {
+      "index": 50,
+      "short": "fil",
+      "name": "List do Filipian",
+      "chapters": 4,
+      "part": "nt"
+    },
+    {
+      "index": 51,
+      "short": "kol",
+      "name": "List do Kolosan",
+      "chapters": 4,
+      "part": "nt"
+    },
+    {
+      "index": 52,
+      "short": "1tes",
+      "name": "1 List do Tesaloniczan",
+      "chapters": 5,
+      "part": "nt"
+    },
+    {
+      "index": 53,
+      "short": "2tes",
+      "name": "2 List do Tesaloniczan",
+      "chapters": 3,
+      "part": "nt"
+    },
+    {
+      "index": 54,
+      "short": "1tym",
+      "name": "1 List do Tymoteusza",
+      "chapters": 6,
+      "part": "nt"
+    },
+    {
+      "index": 55,
+      "short": "2tym",
+      "name": "2 List do Tymoteusza",
+      "chapters": 4,
+      "part": "nt"
+    },
+    {
+      "index": 56,
+      "short": "tyt",
+      "name": "List do Tytusa",
+      "chapters": 3,
+      "part": "nt"
+    },
+    {
+      "index": 57,
+      "short": "flm",
+      "name": "List do Filemona",
+      "chapters": 0,
+      "part": "nt"
+    },
+    {
+      "index": 58,
+      "short": "hebr",
+      "name": "List do Hebrajczyków",
+      "chapters": 13,
+      "part": "nt"
+    },
+    {
+      "index": 59,
+      "short": "jak",
+      "name": "List Jakuba",
+      "chapters": 5,
+      "part": "nt"
+    },
+    {
+      "index": 60,
+      "short": "1p",
+      "name": "1 List Piotra",
+      "chapters": 5,
+      "part": "nt"
+    },
+    {
+      "index": 61,
+      "short": "2p",
+      "name": "2 List Piotra",
+      "chapters": 3,
+      "part": "nt"
+    },
+    {
+      "index": 62,
+      "short": "1j",
+      "name": "1 List Jana",
+      "chapters": 5,
+      "part": "nt"
+    },
+    {
+      "index": 63,
+      "short": "2j",
+      "name": "2 List Jana",
+      "chapters": 0,
+      "part": "nt"
+    },
+    {
+      "index": 64,
+      "short": "3j",
+      "name": "3 List Jana",
+      "chapters": 0,
+      "part": "nt"
+    },
+    {
+      "index": 65,
+      "short": "jud",
+      "name": "List Judy",
+      "chapters": 0,
+      "part": "nt"
+    },
+    {
+      "index": 66,
+      "short": "obj",
+      "name": "Apokalipsa (Objawienie)",
+      "chapters": 22,
+      "part": "nt"
+    }
+  ]
+}
