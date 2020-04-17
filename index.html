@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Audio Player</title>
-	<script src="./main.js"></script>
 	<script src="https://cdn.plyr.io/3.5.10/plyr.js"></script>
-	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.10/plyr.css" />
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.10/plyr.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
-
+	<script defer="" src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script src="./main.js"></script>
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/bulma-tooltip@3.0.2/dist/css/bulma-tooltip.min.css">
 	<style>
 		body {
 			width: 90%;
 			margin: 0 auto;
+		}
+
+		.plyr {
+			width: 95%;
 		}
 
 		.button {
@@ -31,35 +32,45 @@
 
 		.section {
 			margin: 0 auto;
-			max-width: 1000px;
+			max-width: 700px;
 			min-width: 700px;
 		}
 
-	</style>
+		.wp-custom-header {
+			display: none;
+		}
 
+		button:hover {
+			background-color: unset;
+		}
+
+	</style>
 </head>
 
 <body>
+
 	<section class="section">
 		<article class="message is-dark">
 			<div class="message-header">
-				<p>AudioBiblia 2000</p>
+				<p>Audio Biblia 2000</p>
 			</div>
 			<div class="container">
 				<div class="myselect level">
 					<div class="level-left">
-						<button class="button is-rounded"
-							onclick="prevBook('books'); insertChapters('chapters', 'books'); changeAudioSrcWhenReady('books', 'chapters')">
+						<button class="button is-rounded is-outlined has-tooltip-info has-tooltip-bottom"
+							onclick="prevBook('books'); insertChapters('chapters', 'books'); changeAudioSrcWhenReady('books', 'chapters')"
+							data-tooltip-animate-function="scalein" data-tooltip="Poprzednia księga">
 							<span class="icon is-small">
 								<i class="fas fa-angle-left"></i>
 							</span>
 						</button>
-						<div class="select">
+						<div class="select is-loading">
 							<select name="books" id="books"
 								onchange="insertChapters('chapters', 'books'); changeAudioSrcWhenReady('books', 'chapters')"></select>
 						</div>
-						<button class="button is-rounded"
-							onclick="nextBook('books'); insertChapters('chapters', 'books'); changeAudioSrcWhenReady('books', 'chapters')">
+						<button class="button is-rounded is-outlined has-tooltip-info has-tooltip-bottom"
+							onclick="nextBook('books'); insertChapters('chapters', 'books'); changeAudioSrcWhenReady('books', 'chapters')"
+							data-tooltip-animate-function="scalein" data-tooltip="Następna księga">
 							<span class="icon is-small">
 								<i class="fas fa-angle-right"></i>
 							</span>
@@ -67,18 +78,20 @@
 					</div>
 
 					<div class="level-right">
-						<button class="button is-rounded"
-							onclick="prevChapter('chapters'); changeAudioSrcWhenReady('books', 'chapters')">
+						<button class="button is-rounded is-outlined has-tooltip-info has-tooltip-bottom"
+							onclick="prevChapter('chapters'); changeAudioSrcWhenReady('books', 'chapters')"
+							data-tooltip-animate-function="scalein" data-tooltip="Poprzedni rozdział">
 							<span class="icon is-small">
 								<i class="fas fa-angle-left"></i>
 							</span>
 						</button>
-						<div class="select">
+						<div class="select is-loading">
 							<select name="chapters" id="chapters"
 								onchange="changeAudioSrcWhenReady('books', 'chapters')"></select>
 						</div>
-						<button class="button is-rounded"
-							onclick="nextChapter('chapters'); changeAudioSrcWhenReady('books', 'chapters')">
+						<button class="button is-rounded is-outlined has-tooltip-info has-tooltip-bottom"
+							onclick="nextChapter('chapters'); changeAudioSrcWhenReady('books', 'chapters')"
+							data-tooltip-animate-function="scalein" data-tooltip="Następny rodział">
 							<span class="icon is-small">
 								<i class="fas fa-angle-right"></i>
 							</span>
@@ -86,13 +99,13 @@
 					</div>
 				</div>
 
-				<br />
-				<br />
+				<br>
+				<br>
 
 				<div class="level">
 					<div class="level-item player">
-						<audio id="player" controls>
-							<source type="audio/mp3" />
+						<audio id="player" controls="">
+							<source type="audio/mp3" src="">
 						</audio>
 					</div>
 				</div>
@@ -104,7 +117,4 @@
 			"controls": ['play', 'progress', 'current-time', 'mute', 'volume']
 		})
 	</script>
-
 </body>
-
-</html>
