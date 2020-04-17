@@ -12,6 +12,7 @@ function insertBooks(booksSelectId) {
             insertBookOption(book)
         }
         booksSelect.selectedIndex = 39  // select Mat
+        booksSelect.parentNode.classList.remove("is-loading")
     })
 }
 
@@ -19,6 +20,7 @@ function insertChapters(chaptersSelectId, booksSelectId) {
     var chaptersSelect = document.getElementById(chaptersSelectId)
     var booksSelect = document.getElementById(booksSelectId)
 
+    chaptersSelect.parentNode.classList.add("is-loading")
     removeChapters(chaptersSelect)
 
     loadJSON('./books.json', function (response) {
@@ -37,16 +39,21 @@ function insertChapters(chaptersSelectId, booksSelectId) {
                 break
             }
         }
+        chaptersSelect.parentNode.classList.remove("is-loading")
     })
 }
 
 function changeAudioSrc(player, booksSelect, chaptersSelect) {
+    let chapter = chaptersSelect.value
+    if (chapter < 100) {
+        chapter = ('0' + chapter).slice(-2)
+    }
     player.stop()
     player.source = {
         type: 'audio',
         sources: [
             {
-                src: 'https://www.wordproaudio.org/bibles/app/audio/33/' + booksSelect.value + '/' + chaptersSelect.value + '.mp3',
+                src: 'https://audio.biblia.info.pl/bw/' + booksSelect[booksSelect.selectedIndex].name + '_' + chapter + '.mp3',
                 type: 'audio/mp3'
             }
         ]
@@ -72,7 +79,6 @@ window.onload = function () {
 
     this.changeAudioSrcWhenReady('books', 'chapters')
 }
-
 
 function loadJSON(path, callback) {
     var xobj = new XMLHttpRequest();
@@ -131,7 +137,6 @@ function nextChapter(chaptersSelectId) {
         chaptersSelect.selectedIndex = chaptersSelect.selectedIndex + 1
     }
 }
-
 
 function prevChapter(chaptersSelectId) {
     var chaptersSelect = document.getElementById(chaptersSelectId)
